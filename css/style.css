@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.content main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+}
+
+.content main .main-content h1 {
+  font-size: 67px;
+}
+.nav-items-block {
+  display: none;
+}
+
+.content main .main-content p {
+  font-size: 20px;
+}
+
+.content main .main-content .icons i {
+  font-size: 25px;
+  margin: 15px 10px;
+  color: #fff;
+}
+
+.content main img {
+  border-radius: 50px;
+  background-position: inherit;
+  background-size: cover;
+  height: 600px;
+  width: 400px;
+}
+
+.content footer p {
+  color: #fff;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* RESPONSE */
+
+@media only screen and (max-width: 1100px) {
+  .content main {
+    flex-direction: column;
+    padding: 30px 0;
+    text-align: center;
+  }
+
+  .content main .main-content h1 {
+    font-size: 55px;
+  }
+
+  .content main .img img {
+    height: 450px;
+    width: 300px;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .nav-items {
+    display: none;
+  }
+  .nav-items-block {
+    display: block;
+  }
+  .nav-items-block a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  .main-content {
+    text-align: center;
+  }
+  .icons {
+    justify-content: center;
+  }
+  .img {
+    order: -1;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .content main .main-content h1 {
+    font-size: 35px;
+  }
+
+  .nav-items-block {
+    margin-top: 10px;
+  }
+  .nav-items-block a {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 10px;
+    font-size: 10px;
+  }
+
+  .content main .main-content p {
+    font-size: 16px;
+  }
+
+  .content main .img img {
+    height: 280px;
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .nav-items-block a {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 10px;
+    font-size: 8px;
+  }
+}
+
+
+@media only screen and (max-width: 330px) {
+  .nav-items-block a {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 10px;
+    font-size: 5px;
+  }
+}

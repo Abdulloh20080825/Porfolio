@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+hr {
+  margin: 30px auto;
+  width: 95%;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: space-between;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 5px;
+  color: #000;
+}
+
+.content .contact-form .icons i {
+  font-size: 25px;
+  margin: 15px 10px;
+  color: #fff;
+}
+
+.contact-form h1 {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.input-box {
+  margin-bottom: 20px;
+  width: 400px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+  background-color: transparent;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background-color: transparent;
+  width: 100%;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 720px) {
+  .contact-form,
+  header {
+    flex-direction: column;
+  }
+
+  .contact-form {
+    text-align: center;
+  }
+  .contact-form .form {
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  header .nav-items a {
+    font-size: 10px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  header .nav-items a {
+    font-size: 8px;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 250px;
+  }
+}
+/* Общие стили */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+hr {
+  margin: 30px auto;
+  width: 95%;
+}
+
+/* Стили для контактной формы */
+.contact-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 5px;
+  color: #000;
+}
+
+.form {
+  width: 50%;
+}
+
+.form-sibmit {
+  width: 100%;
+}
+
+.content .contact-form .icons i {
+  font-size: 25px;
+  margin: 15px 10px;
+  color: #fff;
+}
+
+.contact-form h1 {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.input-box {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+  background-color: transparent;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background-color: transparent;
+  width: 100%;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form .form {
+    width: 100%;
+  }
+
+  .input-box {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  header .nav-items {
+    display: flex;
+  }
+
+  header .nav-items a {
+    font-size: 10px;
+    margin: 0 5px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+  }
+}

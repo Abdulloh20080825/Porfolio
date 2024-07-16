@@ -1,0 +1,221 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+/* Main content styles */
+.content .main {
+  margin-top: 30px;
+  padding: 0 30px;
+}
+
+.content .main h1 {
+  margin-top: 50px;
+}
+
+.content .main .skills {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.content .main .skills .skill-progress .progress-container {
+  width: 100%;
+  background-color: #ddd;
+  font-size: 10px;
+  border-radius: 4px;
+}
+
+.content .main .skills .skill-progress .progress-container .progress-bar {
+  height: 30px;
+  background-color: #4caf50;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  border-radius: 4px;
+}
+
+/* Skill progress bar widths */
+.content
+  .main
+  .skills
+  .skill-progress:nth-child(1)
+  .progress-container
+  .progress-bar {
+  background-color: #f57819;
+  width: 100%;
+}
+
+.content
+  .main
+  .skills
+  .skill-progress:nth-child(2)
+  .progress-container
+  .progress-bar {
+  background-color: #2419f5;
+  width: 90%;
+}
+
+.content
+  .main
+  .skills
+  .skill-progress:nth-child(3)
+  .progress-container
+  .progress-bar {
+  background-color: #f5e319;
+  width: 70%;
+}
+
+.content
+  .main
+  .skills
+  .skill-progress:nth-child(4)
+  .progress-container
+  .progress-bar {
+  background-color: #19f5f1;
+  width: 50%;
+}
+
+.content
+  .main
+  .skills
+  .skill-progress:nth-child(5)
+  .progress-container
+  .progress-bar {
+  background-color: #198bf5;
+  width: 60%;
+}
+
+.content
+  .main
+  .skills
+  .skill-progress:nth-child(6)
+  .progress-container
+  .progress-bar {
+  background-color: #19f52b;
+  width: 60%;
+}
+
+.main .skills .skill-progress:nth-child(7) .progress-container .progress-bar {
+  background-color: #f59d19;
+  width: 65%;
+}
+
+.main .skills .skill-progress:nth-child(8) .progress-container .progress-bar {
+  background-color: #198bf5;
+  width: 30%;
+}
+
+.main .skills .skill-progress:nth-child(9) .progress-container .progress-bar {
+  background-color: #1962f5;
+  width: 40%;
+}
+
+hr {
+  margin: 50px;
+}
+
+/* About content styles */
+.main .about-content {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main .about-content h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.main .about-content .about {
+  width: 500px;
+}
+
+.main .about-content img {
+  width: 500px;
+  border-radius: 50px;
+}
+
+/* Footer styles */
+.content footer p {
+  margin-top: 50px;
+  text-align: center;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 1100px) {
+  .content .about-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+  .content .main .skills {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .content .about-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+  .content .main .skills {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  header {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  header .nav-items a {
+    font-size: 10px;
+  }
+  .main .about-content img {
+    width: 300px;
+    border-radius: 50px;
+  }
+  .main .about-content p {
+    font-size: 10px;
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .content .main .skills .skill-progress {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .content .main .skills .skill-progress .progress-container {
+    background-color: #ddd;
+    font-size: 10px;
+    border-radius: 4px;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .content .main .skills .skill-progress {
+    width: 150px;
+    margin: 0 auto;
+  }
+  .content .main .skills .skill-progress .progress-container {
+    background-color: #ddd;
+    font-size: 10px;
+    border-radius: 4px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  header .nav-items {
+    display: flex;
+    font-size: 6px;
+  }
+}
